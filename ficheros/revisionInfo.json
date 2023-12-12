@@ -1,0 +1,56 @@
+[
+    {
+      "nombre": "Antonia",
+      "matricula": "3488 JLR",
+      "modelo": "BMW",
+      "kilometraje": "35000"
+    },
+    {
+      "nombre": "Peter",
+      "matricula": "0549 CHN",
+      "modelo": "Audi",
+      "kilometraje": "16000"
+    },
+    {
+      "nombre": "Jane",
+      "matricula": "6392 KPT",
+      "modelo": "Range Rover",
+      "kilometraje": "23000"
+    },
+    {
+      "nombre": "Harry",
+      "matricula": "3685 HDP",
+      "modelo": "Bentley",
+      "kilometraje": "1500"
+    },
+    {
+      "nombre": "Tony",
+      "matricula": "6499 GJX",
+      "modelo": "Cadillac",
+      "kilometraje": "55000"
+    },
+    {
+      "nombre": "Jon",
+      "matricula": "4893 LVL",
+      "modelo": "Ferrari",
+      "kilometraje": "49000"
+    },
+    {
+      "nombre": "Percy",
+      "matricula": "7531 HCH",
+      "modelo": "Volvo",
+      "kilometraje": "5000"
+    },
+    {
+      "nombre": "Kaz",
+      "matricula": "2450 NXB",
+      "modelo": "Mini",
+      "kilometraje": "36250"
+    },
+    {
+      "nombre": "Katniss",
+      "matricula": "8654 ZAL",
+      "modelo": "Cadillac",
+      "kilometraje": "43957"
+    }
+  ]

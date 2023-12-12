@@ -1,0 +1,85 @@
+[
+  {
+    "nombre": "Antonia",
+    "apellidos": "Scott",
+    "rol": "Conductor",
+    "supervisor": "Ariana",
+    "segundoSupervisor": "Phil",
+    "mail": "antonia.scott@gmail.com",
+    "password": "12345",
+    "phone": "987654321"
+  },
+  {
+    "nombre": "Peter",
+    "apellidos": "Parker",
+    "rol": "Conductor",
+    "supervisor": "Ariana",
+    "segundoSupervisor": "",
+    "mail": "peter.parker@gmail.com",
+    "password": "6789",
+    "phone": "667105923"
+  },
+  {
+    "nombre": "Jane",
+    "apellidos": "Austen",
+    "supervisor": "Cher",
+    "segundoSupervisor": "",
+    "mail":"jane.austen@gmail.com",
+    "password":"1029",
+    "phone":"657483901"
+  },
+  {
+    "nombre": "Harry",
+    "apellidos": "Potter",
+    "supervisor": "Ariana",
+    "segundoSupervisor": "",
+    "mail":"harry.potterr@gmail.com",
+    "password":"abcde",
+    "phone":"121288371"
+  },
+  {
+    "nombre": "Tony",
+    "apellidos": "Stark",
+    "supervisor": "Conan",
+    "segundoSupervisor": "",
+    "mail":"tony.stark@gmail.com",
+    "password":"a1b2c3",
+    "phone":"611288379"
+  },
+  {
+    "nombre": "Jon",
+    "apellidos": "Snow",
+    "supervisor": "Phil",
+    "segundoSupervisor": "",
+    "mail":"jon.snow@gmail.com",
+    "password":"w0lf",
+    "phone":"611288379"
+  },
+  {
+    "nombre": "Percy",
+    "apellidos": "Jackson",
+    "supervisor": "Phil",
+    "segundoSupervisor": "",
+    "mail":"percy.jackson@gmail.com",
+    "password":"jsh11mo5",
+    "phone":"834276156"
+  },
+  {
+    "nombre": "Kaz",
+    "apellidos": "Brekker",
+    "supervisor": "Cher",
+    "segundoSupervisor": "",
+    "mail":"kaz.brekker@gmail.com",
+    "password":"ks9d74h",
+    "phone":"888765437"
+  },
+  {
+    "nombre": "Katniss",
+    "apellidos": "Everdeen",
+    "supervisor": "Conan",
+    "segundoSupervisor": "",
+    "mail":"katniss.everdeen@gmail.com",
+    "password":"m0h8aa4d3j",
+    "phone":"669281567"
+  }
+]

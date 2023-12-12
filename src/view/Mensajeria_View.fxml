@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <BorderPane prefHeight="100.0" prefWidth="800.0" styleClass="frame_color_white" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+               <top>
+                  <GridPane BorderPane.alignment="CENTER">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="nombreUser" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="372.0" text="Label" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rolUser" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="372.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonSubMenu" mnemonicParsing="false" onAction="#llevaSubMenu" prefHeight="92.0" prefWidth="59.0" styleClass="frame_color_white" stylesheets="@../application/application.css" underline="true">
+                           <GridPane.margin>
+                              <Insets left="80.0" top="40.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <ImageView fitHeight="63.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../imagenes/menu.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="botonMenu" mnemonicParsing="false" onAction="#volverMenu" styleClass="frame_color_white">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../imagenes/casa.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust brightness="-1.0" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets left="20.0" top="40.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </top>
+               <center>
+                  <Label text="Enviar Mensaje" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="frame_color_red" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.0" minWidth="10.0" prefWidth="107.6666259765625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="614.3333129882812" minWidth="10.0" prefWidth="601.8887939453125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="394.66668701171875" minWidth="10.0" prefWidth="108.1112060546875" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="169.0" minHeight="10.0" prefHeight="105.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="278.5555725097656" minHeight="10.0" prefHeight="237.66665649414062" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="89.33334350585938" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="inputEmail" promptText="Email" GridPane.columnIndex="1" />
+                  <TextField fx:id="inputMensaje" alignment="TOP_LEFT" prefHeight="194.0" prefWidth="400.0" promptText="¿Qué quieres decir?" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Button fx:id="botonEnviar" alignment="CENTER" mnemonicParsing="false" onAction="#enviarMensaje" prefHeight="31.0" prefWidth="90.0" styleClass="sidebar" stylesheets="@../application/firstGUI.css" text="Enviar" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="500.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

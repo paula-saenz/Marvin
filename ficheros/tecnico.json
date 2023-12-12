@@ -1,0 +1,34 @@
+[
+  {
+    "nombre": "Ariana",
+    "rol": "Tecnico",
+    "usuario": "Antonia",
+    "segundoUsuario": "Peter",
+    "mail": "ariana.grande@gmail.com",
+    "password": "ajd72h3n4"
+  },
+  {
+    "nombre": "Cher",
+    "rol": "Tecnico",
+    "usuario": "Peter",
+    "segundoUsuario": "",
+    "mail": "cher.sarkisian@gmail.com",
+    "password": "99a8"
+  },
+  {
+    "nombre": "Phil",
+    "rol": "Tecnico",
+    "usuario": "Antonia",
+    "segundoUsuario": "",
+    "mail": "phil.collins@gmail.com",
+    "password": "hust1"
+  },
+  {
+    "nombre": "Conan",
+    "rol": "Tecnico",
+    "usuario": "Harry",
+    "segundoUsuario": "",
+    "mail": "conan.gray@gmail.com",
+    "password": "3m3mjj6"
+  }
+]

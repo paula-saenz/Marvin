@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" styleClass="frame_color_white" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="550.0" prefWidth="1068.0" BorderPane.alignment="CENTER">
+         <top>
+            <BorderPane prefHeight="109.0" prefWidth="800.0" styleClass="frame_color_red" BorderPane.alignment="CENTER">
+               <left>
+                  <Label fx:id="holaVariable" prefHeight="59.0" prefWidth="145.0" text="HOLA," textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="40.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </left>
+               <center>
+                  <Label fx:id="variableNombre" prefHeight="70.0" prefWidth="270.0" text="*NOMBRE*" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="280.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="48.0" />
+                     </font>
+                  </Label>
+               </center>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </BorderPane>
+         </top>
+         <center>
+            <GridPane prefHeight="394.0" prefWidth="752.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="274.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="153.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.77783203125" minWidth="10.0" prefWidth="272.6666259765625" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="90.77777099609375" minHeight="16.111114501953125" prefHeight="26.222259521484375" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="188.88888549804688" minHeight="10.0" prefHeight="104.77774047851562" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="168.11111450195312" minHeight="6.5555419921875" prefHeight="127.4444580078125" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="botonDatos" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickDatos" prefHeight="123.0" prefWidth="150.0" style="-fx-background-color: #F5F5F5;" styleClass="frame_color_red" stylesheets="@../application/application.css" text="Datos" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="75.0" right="1.0" top="1.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/Datos.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="botonHistorial" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickHistorial" prefHeight="123.0" prefWidth="150.0" style="-fx-background-color: #F5F5F5;" styleClass="frame_color_red" stylesheets="@../application/application.css" text="Historial" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="1.0" left="70.0" right="20.0" top="1.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/Historial.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="MensajeriaBtton" alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#llevar_a_mensajeria" prefHeight="70.0" prefWidth="150.0" style="-fx-background-color: #F5F5F5;" styleClass="sidebar" stylesheets="@../application/firstGUI.css" text="Mensajes" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="60.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/charla.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="50.0" right="50.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

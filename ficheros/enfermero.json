@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Ginny",
+    "rol": "Enfermero",
+    "mail": "ginny.miller@gmail.com",
+    "password": "12345"
+  },
+  {
+    "nombre": "Geogia",
+    "rol": "Enfermero",
+    "mail": "georgia.miller@gmail.com",
+    "password": "mma4gh55"
+  }
+]

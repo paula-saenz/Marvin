@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.frame_color_red{
+    -fx-background-color: #F13A3A;
+}
+
+.frame_color_white{
+    -fx-background-color: #FFFFFF;
+}
+.frame_color_black{
+    -fx-background-color: #000000;
+}

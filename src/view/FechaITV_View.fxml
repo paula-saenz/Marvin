@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="550.0" prefWidth="800.0" styleClass="frame_color_white" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="20.0" />
+         </BorderPane.margin>
+         <top>
+            <BorderPane prefHeight="0.0" prefWidth="550.0" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+               <top>
+                  <Label fx:id="labelProximaFecha" prefHeight="43.0" prefWidth="276.0" text="PRÓXIMA FECHA DE INSPECCIÓN (ITV)" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="100.0" right="100.0" top="35.0" />
+                     </BorderPane.margin>
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </top>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </BorderPane>
+         </top>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <bottom>
+                  <BorderPane prefHeight="89.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+                     <left>
+                        <Hyperlink fx:id="LinkInfoITV" onAction="#InfoITVEscrito" text="¿Qué necesitarás para tu ITV?" BorderPane.alignment="CENTER">
+                           <padding>
+                              <Insets left="280.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <effect>
+                              <Lighting bumpInput="$null">
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect></Hyperlink>
+                     </left>
+                     <right>
+                        <ImageView fx:id="LogoUemParcial" fitHeight="65.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+                     </right>
+                  </BorderPane>
+               </bottom>
+               <center>
+                  <Text fx:id="TextTuProximaVisita" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="557.4700317382812" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </center>
+               <top>
+                  <Label fx:id="annioCoche" alignment="CENTER" prefHeight="17.0" prefWidth="571.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </top>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </center>
+   <top>
+      <BorderPane prefHeight="90.0" prefWidth="800.0" styleClass="frame_color_red" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="buttonSubMenu" mnemonicParsing="false" onAction="#llevaSubMenu" prefHeight="61.0" prefWidth="40.0" styleClass="frame_color_red" stylesheets="@../application/application.css" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/lista.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <effect>
+                        <ColorAdjust />
+                     </effect></Button>
+                  <Label fx:id="nombreUser" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="372.0" text="Label" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="rolUser" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="372.0" text="Label" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="LabelFechaITV" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="274.0" text="ITV" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="botonMenu" mnemonicParsing="false" onAction="#volverMenu" styleClass="frame_color_red" stylesheets="@../application/application.css" GridPane.rowIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/casa.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </top>
+      </BorderPane>
+   </top>
+   <left>
+      <BorderPane prefHeight="482.0" prefWidth="96.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <BorderPane prefHeight="482.0" prefWidth="77.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane prefHeight="97.0" prefWidth="800.0" styleClass="frame_color_red" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <top>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label fx:id="nombreUser" alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="372.0" text="Label" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="rolUser" alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="372.0" text="Label" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="20.0" top="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Revision" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="60.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Button fx:id="buttonSubMenu" mnemonicParsing="false" onAction="#llevaSubMenu" styleClass="frame_color_red" stylesheets="@../application/application.css">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/lista.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="80.0" top="40.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="botonMenu" mnemonicParsing="false" onAction="#volverMenu" styleClass="frame_color_red">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imagenes/casa.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </top>
+      </BorderPane>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="frame_color_white" stylesheets="@../application/application.css" BorderPane.alignment="CENTER">
+         <center>
+            <BorderPane prefHeight="332.0" prefWidth="540.0" style="-fx-background-radius: 12;" styleClass="frame_color_white" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="130.0" right="130.0" top="50.0" />
+               </BorderPane.margin>
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXTextField fx:id="citaRevision" focusColor="WHITE" prefHeight="31.0" prefWidth="383.0" promptText="      ¡Apunta aquí la fecha de tu revisión a modo recordatorio!" unFocusColor="WHITE" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="60.0" right="60.0" />
+                           </GridPane.margin>
+                           <effect>
+                              <ColorAdjust contrast="-0.12" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </JFXTextField>
+                        <Text fx:id="textoRevision" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="438.22222900390625">
+                           <GridPane.margin>
+                              <Insets left="50.0" top="30.0" />
+                           </GridPane.margin>
+                        </Text>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </GridPane>
+               </center>
+            </BorderPane>
+         </center>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></BorderPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,46 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+[
+    {
+        "nombre": "Antonia",
+        "apellidos": "Scott",
+        "mail":"antonia.scott@gmail.com",
+        "password":"12345",
+        "phone":"987654321"
+    },
+    {
+        "nombre": "Peter",
+        "apellidos": "Parker",
+        "mail":"peter.parker@gmail.com",
+        "password":"6789",
+        "phone":"667105923"
+    },
+    {
+        "nombre": "a",
+        "apellidos": "Parker",
+        "mail":"peter.parker@gmail.com",
+        "password":"6789",
+        "phone":"667105923"
+    },
+    {
+        "nombre": "b",
+        "apellidos": "Parker",
+        "mail":"peter.parker@gmail.com",
+        "password":"6789",
+        "phone":"667105923"
+    },
+    {
+        "nombre": "c",
+        "apellidos": "Parker",
+        "mail":"peter.parker@gmail.com",
+        "password":"6789",
+        "phone":"667105923"
+    }
+<<<<<<< Updated upstream
+]
+=======
+]
+
+>>>>>>> Stashed changes

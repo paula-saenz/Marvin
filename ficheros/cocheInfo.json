@@ -1,0 +1,56 @@
+[
+  {
+    "nombre": "Antonia",
+    "matricula": "3488 JLR",
+    "modelo": "BMW",
+    "anio": "2001"
+  },
+  {
+    "nombre": "Peter",
+    "matricula": "0549 CHN",
+    "modelo": "Audi",
+    "anio": "2008"
+  },
+  {
+    "nombre": "Jane",
+    "matricula": "6392 KPT",
+    "modelo": "Range Rover",
+    "anio": "2016"
+  },
+  {
+    "nombre": "Harry",
+    "matricula": "3685 HDP",
+    "modelo": "Bentley",
+    "anio": "2001"
+  },
+  {
+    "nombre": "Tony",
+    "matricula": "6499 GJX",
+    "modelo": "Cadillac",
+    "anio": "2012"
+  },
+  {
+    "nombre": "Jon",
+    "matricula": "4893 LVL",
+    "modelo": "Ferrari",
+    "anio": "1996"
+  },
+  {
+    "nombre": "Percy",
+    "matricula": "7531 HCH",
+    "modelo": "Volvo",
+    "anio": "2020"
+  },
+  {
+    "nombre": "Kaz",
+    "matricula": "2450 NXB",
+    "modelo": "Mini",
+    "anio": "2010"
+  },
+  {
+    "nombre": "Katniss",
+    "matricula": "8654 ZAL",
+    "modelo": "Cadillac",
+    "anio": "2005"
+  }
+]
